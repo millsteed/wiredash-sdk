@@ -172,6 +172,7 @@ void _setupServices(WiredashServices sl) {
     (locator) {
       return WiredashApi(
         httpClient: Client(),
+        host: sl.wiredashWidget.host,
         projectId: sl.wiredashWidget.projectId,
         secret: sl.wiredashWidget.secret,
         deviceIdProvider: sl.deviceIdGenerator.deviceId,

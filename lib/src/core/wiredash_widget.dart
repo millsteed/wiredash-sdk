@@ -43,6 +43,7 @@ class Wiredash extends StatefulWidget {
   /// wishes, ratings and much more
   const Wiredash({
     super.key,
+    this.host = 'https://api.wiredash.io/sdk',
     required this.projectId,
     required this.secret,
     @Deprecated('Since 1.0.0 the navigatorKey is not required anymore')
@@ -58,6 +59,9 @@ class Wiredash extends StatefulWidget {
   /// Reference to the app [Navigator] to show the Wiredash bottom sheet
   @Deprecated('Since 1.0.0 the navigatorKey is not required anymore')
   final GlobalKey<NavigatorState>? navigatorKey;
+
+  // Host of the Wiredash SDK API
+  final String host;
 
   /// Your Wiredash projectId
   final String projectId;
