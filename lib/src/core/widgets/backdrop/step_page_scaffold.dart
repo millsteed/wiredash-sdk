@@ -81,7 +81,7 @@ class StepPageScaffoldState extends State<StepPageScaffold> {
           DefaultTextStyle(
             style: context.text.adaptiveBody.onBackground,
             child: widget.description!,
-          )
+          ),
       ],
     );
   }
@@ -174,8 +174,8 @@ class StepPageScaffoldState extends State<StepPageScaffold> {
                               overflow: TextOverflow.ellipsis,
                               child: widget.breadcrumbTitle!,
                             ),
-                          )
-                        ]
+                          ),
+                        ],
                       ],
                     );
 
@@ -237,7 +237,7 @@ class StepPageScaffoldState extends State<StepPageScaffold> {
                                         const Text('Really?'),
                                   ),
                           ),
-                        ]
+                        ],
                       ],
                     );
                     return [
@@ -336,8 +336,7 @@ class _ScrollBoxState extends State<ScrollBox> {
       child = Scrollbar(
         interactive: false,
         controller: controller,
-        // ignore: deprecated_member_use
-        isAlwaysShown: false,
+        thumbVisibility: false,
         child: child,
       );
     }
